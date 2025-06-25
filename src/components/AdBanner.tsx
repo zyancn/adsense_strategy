@@ -1,5 +1,12 @@
 import React from 'react'
 
+// 声明 adsbygoogle 全局变量
+declare global {
+  interface Window {
+    adsbygoogle: any[]
+  }
+}
+
 interface AdBannerProps {
   size: '728x90' | '320x50' | '336x280' | '300x250' | '300x600'
   position: 'header' | 'header-mobile' | 'content' | 'footer'
@@ -22,28 +29,27 @@ const AdBanner: React.FC<AdBannerProps> = ({ size, position, className = '' }) =
     'footer': 'mx-auto'
   }
 
+  React.useEffect(() => {
+    // 确保 adsbygoogle 对象存在
+    (window.adsbygoogle = window.adsbygoogle || []).push({});
+  }, []);
+
   return (
     <div className={`${positionClasses[position]} ${className}`}>
       <div className={`${sizeClasses[size]} bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center relative overflow-hidden`}>
-        {/* AdSense 广告代码将在这里插入 */}
-        <div className="text-center">
-          <div className="text-xs text-gray-500 mb-1">广告</div>
-          <div className="text-sm text-gray-400">AdSense {size}</div>
-          {/* 这里将来会替换为实际的 AdSense 代码 */}
-          <script
-            async
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-xxxxxxxxxxxxxxxx"
-            crossOrigin="anonymous"
-          />
-          <ins
-            className="adsbygoogle"
-            style={{ display: 'block' }}
-            data-ad-client="ca-pub-xxxxxxxxxxxxxxxx"
-            data-ad-slot="xxxxxxxxxx"
-            data-ad-format="auto"
-            data-full-width-responsive="true"
-          />
-        </div>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6400746346592229"
+          crossOrigin="anonymous"
+        />
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-6400746346592229"
+          data-ad-slot="5159592179"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
       </div>
     </div>
   )

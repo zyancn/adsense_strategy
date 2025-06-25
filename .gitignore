@@ -32,3 +32,7 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# SSH Keys
+008848
+008848.pub
