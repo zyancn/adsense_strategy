@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { Search, Filter, Clock, Target, TrendingUp, User } from 'lucide-react'
+import { Search, Filter, Clock, Target, TrendingUp, User, ArrowRight } from 'lucide-react'
 import AdBanner from '../components/AdBanner'
 
 const Tutorials: React.FC = () => {
@@ -674,15 +674,15 @@ const Tutorials: React.FC = () => {
 - **训练后**：15-20分钟静态拉伸
 - **休息日**：30分钟全面拉伸
 
-### 柔韧性提升计划
+### 柔韧提升计划
 - **频率**：每周4-6次
 - **时长**：30-45分钟
-- **目标**：系统性提升全身柔韧性
+- **目标**：系统性提升全身柔韧韧性
 
 ## 进阶技巧
 
 ### 呼吸配合
-- **拉伸时**：缓慢深呼吸，每次呼气时略微加深拉伸
+- **拉伸时**：缓慢深呼吸，每次呼气时略微加大拉伸
 - **节奏**：4秒吸气，6秒呼气
 - **专注**：将注意力集中在呼吸和身体感受上
 
@@ -696,7 +696,7 @@ const Tutorials: React.FC = () => {
 - **第3-4周**：增加保持时间
 - **第5周以上**：增加动作难度
 
-通过坚持规律的拉伸训练，您将在2-4周内感受到身体柔韧性的显著改善。长期坚持不仅能让身体更加灵活，还能有效预防运动伤害，提升整体生活质量。记住，拉伸是一个渐进的过程，切忌急躁，享受这个让身心放松的美好时光。
+通过坚持规律的拉伸训练，您将在2-4周内感受到身体柔韧性的显著改善。长期坚持不仅能让身体更加灵活，还能有效预防运动伤害，提升整体生活质量。记住，拉伸是一个渐进的过程，切忌急躁，享受这个让身心放松的美好的时光。
         `
     },
     {
