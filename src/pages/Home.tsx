@@ -210,11 +210,23 @@ const Home: React.FC = () => {
       {/* Native Ad */}
       <div className="bg-white rounded-lg shadow-md p-6">
         <div className="text-xs text-gray-500 mb-4 text-center">赞助内容</div>
-        <div className="w-full h-[200px] bg-gray-100 border border-gray-200 rounded-lg flex items-center justify-center">
-          <div className="text-center">
-            <div className="text-sm text-gray-400">原生广告单元</div>
-          </div>
-        </div>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6400746346592229"
+          crossOrigin="anonymous"
+        />
+        {/* fit首页中部 */}
+        <ins
+          className="adsbygoogle"
+          style={{ display: 'block' }}
+          data-ad-client="ca-pub-6400746346592229"
+          data-ad-slot="3260187146"
+          data-ad-format="auto"
+          data-full-width-responsive="true"
+        />
+        <script>
+          {`(adsbygoogle = window.adsbygoogle || []).push({});`}
+        </script>
       </div>
 
       {/* Latest Articles */}
